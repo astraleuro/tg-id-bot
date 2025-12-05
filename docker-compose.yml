@@ -1,0 +1,7 @@
+services:
+  tg-id-bot:
+    build: .
+    container_name: pep-bot
+    restart: unless-stopped
+    env_file:
+      - .env
